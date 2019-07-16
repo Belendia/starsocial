@@ -3,7 +3,7 @@ from . import models
 
 # Register your models here.
 
-# this is to edit the GroupMember model inline in the Group app interface in the admin app
+# This is to edit the GroupMember model inline in the Group model interface in the admin app
 
 
 class GroupMemberInline(admin.TabularInline):
