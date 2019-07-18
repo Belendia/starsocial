@@ -13,12 +13,12 @@ User = get_user_model()
 
 
 class Post(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, related_name='posts')
     created_at = models.DateTimeField(auto_now=True)
     message = models.TextField()
     message_html = models.TextField(editable=False)
     group = models.ForeignKey(
-        Group, related_name='posts', null=True, blank=True),
+        Group, related_name='posts', null=True, blank=True)
 
     def __str__(self):
         return self.message

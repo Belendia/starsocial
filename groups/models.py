@@ -3,6 +3,7 @@ from django.utils.text import slugify
 import misaka
 from django.contrib.auth import get_user_model
 from django import template
+from django.core.urlresolvers import reverse
 
 # misaka is for link embedding
 # Create your models here.
